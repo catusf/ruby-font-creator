@@ -97,11 +97,25 @@ def save_list_to_json(int_list, file_path):
         json.dump(int_list, json_file, indent=4)
 
 
+included_blocks = set([
+    # "Basic Latin",
+    "Latin-1 Supplement",
+    "Latin Extended-A",
+    "Latin Extended-B",
+    # "Combining Diacritical Marks",
+    # "Latin Extended Additional",
+    # "General Punctuation",
+    # "Superscripts and Subscripts",
+    # "Currency Symbols",
+    # "Combining Diacritical Marks for Symbols"
+    ]
+ )
 
 def summarize_font(font_path):
     print(f'Summary for {font_path}')
     font = TTFont(font_path)
     cmap = font['cmap'].getcmap(3, 1).cmap  # Platform 3 (Windows), Encoding 1 (Unicode)
+    code2block = {}
     
     if 'CFF ' in font:
         num_glyphs = len(font['CFF '].cff.topDictIndex[0].CharStrings.charStrings)
@@ -111,19 +125,29 @@ def summarize_font(font_path):
     num_codepoints = len(cmap)
     
     unicode_blocks = defaultdict(lambda: {"count": 0, "total": 0})
-    
-    # Example usage:
-    file_path = 'src/noto_codepoints.json'
-    save_list_to_json(sorted(list(cmap.keys())), file_path)
-        
+
+    font.close()
+
     for codepoint in cmap.keys():
         block_name = get_unicode_block(codepoint)
         unicode_blocks[block_name]["count"] += 1
+        code2block[codepoint] = block_name
     
     for block_name, (start, end) in UNICODE_BLOCKS.items():
         unicode_blocks[block_name]["total"] = end - start + 1
     
-    font.close()
+    list_to_add = []
+
+    for codepoint in cmap.keys():
+        if code2block[codepoint] in included_blocks:
+            list_to_add.append(codepoint)
+    
+    # Example usage:
+    file_path = 'src/noto_codepoints.json'
+    file_path_added = 'src/added_codepoints.json'
+
+    save_list_to_json(sorted(list(cmap.keys())), file_path)
+    save_list_to_json(sorted(list_to_add), file_path_added)
     
     # Output the results
     filtered_results = [

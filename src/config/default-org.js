@@ -7,11 +7,8 @@ export default {
   get destFilename() {
     return path.resolve(`./build/${this.fontName}`)
   },
-  baseFontFilepath: path.resolve('./resources/fonts/NotoSansSC-Regular.ttf'),
-  annotationFontFilepath: path.resolve(
-    './resources/fonts/LXGWWenKaiMono-Regular.ttf'
-  ),
-  fontName: 'Noto-Sans-Mono-Top-Small',
+  fontFilepath: path.resolve('./resources/fonts/DroidSansFallbackFull.ttf'),
+  fontName: 'Droid-Sans-Top',
   formats: ['ttf'],
   inputFiles: './build/**/*.svg',
   workingDir: path.resolve('./build/svg'),
