@@ -2,7 +2,7 @@ export default {
   annotation: {
     bottom: options => ({
       x: options.width / 2,
-      y: options.height + 12,
+      y: options.height + 8,
       fontSize: 28,
       anchor: 'bottom center',
       attributes: { fill: 'black', stroke: 'black', id: 'annotation' }
@@ -23,7 +23,7 @@ export default {
     }),
     top: options => ({
       x: options.width / 2,
-      y: -4,
+      y: -6,
       fontSize: 28,
       anchor: 'top center',
       attributes: { fill: 'black', stroke: 'black', id: 'annotation' }
@@ -32,7 +32,7 @@ export default {
   base: {
     bottom: options => ({
       x: options.width / 2,
-      y: options.height + 12,
+      y: options.height - 14,
       fontSize: 56,
       anchor: 'bottom center',
       attributes: { fill: 'black', stroke: 'black', id: 'glyph' }
@@ -46,7 +46,7 @@ export default {
     }),
     top: options => ({
       x: options.width / 2,
-      y: -4,
+      y: 10,
       fontSize: 56,
       anchor: 'top center',
       attributes: { fill: 'black', stroke: 'black', id: 'glyph' }
