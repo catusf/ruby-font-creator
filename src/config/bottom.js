@@ -7,9 +7,14 @@ export default {
   get destFilename() {
     return path.resolve(`./build/${this.fontName}`)
   },
-  fontFilepath: path.resolve('./resources/fonts/DroidSansFallbackFull.ttf'),
-  fontName: 'ruby-font-creator',
-  formats: ['ttf', 'woff2'],
+  baseFontFilepath: path.resolve(
+    './resources/fonts/NotoSansSC-Regular.ttf'
+  ),
+  annotationFontFilepath: path.resolve(
+    './resources/fonts/NotoSansMono-Regular.ttf'
+  ),
+  fontName: 'Leo-Pinyin-Bottom',
+  formats: ['ttf'],
   inputFiles: './build/**/*.svg',
   workingDir: path.resolve('./build/svg'),
   get layout() {
