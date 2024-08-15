@@ -54,11 +54,11 @@ def load_noto_json_to_set(file_path):
     return int_set
 
 # Example usage:
-file_path = '/workspaces/ruby-font-creator/src/added_codepoints.json'
+file_path = 'src/added_codepoints.json'
 noto_set = load_noto_json_to_set(file_path)
 print(len(noto_set))
 
-data_file_path = '/workspaces/ruby-font-creator/src/data-full.json'
+data_file_path = 'src/data-chinese-pronunciations.json'
 list_glyph, dict_glyph = load_glyph_data_json_to_dict(data_file_path)
 set_glyph = set(dict_glyph.keys())
 print(len(dict_glyph))
@@ -91,9 +91,12 @@ for item in not_in_data:
         }
   )
 
-new_data_file= '/workspaces/ruby-font-creator/src/data-new.json'
+list_glyph = sorted(list_glyph, key=lambda x: x['codepoint'])
+
+new_data_file= 'src/data-new.json'
 
 with open(new_data_file, 'w', encoding='utf-8') as json_file:
+    
     json.dump(list_glyph, json_file, indent=4, ensure_ascii=False)
 
 print(len(list_glyph))
