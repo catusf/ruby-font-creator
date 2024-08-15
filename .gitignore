@@ -1,3 +1,4 @@
+.venv
 .directory
 .favicon.png
 resources/unihan/ucd.*.xml
