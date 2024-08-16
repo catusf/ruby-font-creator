@@ -14,7 +14,7 @@ export default {
     './resources/fonts/NotoSans/NotoSans-Regular.hinted.ttf'
   ),
   fontName: 'RFC-Tifinagh-regular',
-  formats: ['ttf', 'woff2'],
+  formats: ['ttf'],
   inputFiles: './build/**/*.svg',
   workingDir: path.resolve('./build/svg'),
   get layout() {

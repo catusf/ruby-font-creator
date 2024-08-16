@@ -12,6 +12,28 @@ export default {
 
     return newConfig
   },
+
+  setBaseFontFilepath(config, cliArguments) {
+    const newConfig = Object.assign({}, config)
+
+    if (cliArguments.baseFont) {
+      newConfig.baseFontFilepath = path.resolve(cliArguments.baseFont)
+    }
+
+    return newConfig
+  },
+
+  setRubyFontFilepath(config, cliArguments) {
+    const newConfig = Object.assign({}, config)
+
+    if (cliArguments.rubyFont) {
+      newConfig.rubyFontFilepath = path.resolve(cliArguments.rubyFont)
+    }
+
+    return newConfig
+  },
+
+
   setDataSource(config, cliArguments) {
     const newConfig = Object.assign({}, config)
 

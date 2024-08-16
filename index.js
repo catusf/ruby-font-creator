@@ -36,6 +36,8 @@ function start(cliArguments) {
   let config = helpers.setBuildConfig(cliArguments)
   config = helpers.setDataSource(config, cliArguments)
   config = helpers.setFontName(config, cliArguments)
+  config = helpers.setBaseFontFilepath(config, cliArguments)
+  config = helpers.setRubyFontFilepath(config, cliArguments)
 
   jsonfile.readFile(config.dataSource, (err, data) => {
     if (err) {

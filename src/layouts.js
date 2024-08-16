@@ -2,28 +2,26 @@ export default {
   ruby: {
     bottom: options => ({
       x: options.width / 2,
-      y: options.height + 8,
+      y: options.height + 6,
       fontSize: 28,
       anchor: 'bottom center',
       attributes: { fill: 'black', stroke: 'black', id: 'ruby' }
     }),
     left: options => ({
-      x: 1,
-      y: options.height * 1.5 / 2,
+      x: -5,
+      y: options.height / 2,
       fontSize: 24,
-      anchor: 'left center',
+      anchor: 'top center',
       attributes: {
         fill: 'black',
         stroke: 'black',
         id: 'glyph',
-        transform: `rotate(-90, 24, ${options.height / 2}) translate(0, ${-(
-          24 + 1
-        )})`
+        transform: `rotate(-1.5708, -5, ${options.height / 2})`
       }
     }),
     top: options => ({
       x: options.width / 2,
-      y: -8,
+      y: -6,
       fontSize: 28,
       anchor: 'top center',
       attributes: { fill: 'black', stroke: 'black', id: 'ruby' }
