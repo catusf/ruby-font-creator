@@ -8,9 +8,7 @@ export default {
     return path.resolve(`./build/${this.fontName}`)
   },
   baseFontFilepath: path.resolve('./resources/fonts/NotoSansSC-Regular.ttf'),
-  rubyFontFilepath: path.resolve(
-    './resources/fonts/NotoSansMono-Regular.ttf'
-  ),
+  rubyFontFilepath: path.resolve('./resources/fonts/NotoSansMono-Regular.ttf'),
   fontName: 'Leo-Pinyin-Top',
   formats: ['ttf'],
   inputFiles: './build/**/*.svg',
