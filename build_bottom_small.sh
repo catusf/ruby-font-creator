@@ -1,9 +1,3 @@
 rm -f build/svg/*
 
-rm src/config/default.js
-rm src/data.json
-
-cp -f src/config/bottom.js src/config/default.js
-cp -f src/data-small-org.json src/data.json
-
-yarn build
+node --max_old_space_size=8192 --optimize_for_size --stack_size=4096 --require babel-core/register ./index.js --config=./src/config/bottom.js --data=src/data-small-org.json

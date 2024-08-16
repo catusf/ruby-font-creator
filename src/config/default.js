@@ -18,7 +18,7 @@ export default {
   workingDir: path.resolve('./build/svg'),
   get layout() {
     return {
-      base: layout.base.bottom(this.canvas),
+      base: layout.base.top(this.canvas),
       annotation: layout.annotation.top(this.canvas)
     }
   }
