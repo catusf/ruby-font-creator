@@ -7,7 +7,6 @@ export default {
   get destFilename() {
     return path.resolve(`./build/${this.fontName}`)
   },
-  fontFilepath: path.resolve('./resources/fonts/NotoSansSC-Regular.ttf'),
   baseFontFilepath: path.resolve('./resources/fonts/NotoSansSC-Regular.ttf'),
   annotationFontFilepath: path.resolve(
     './resources/fonts/NotoSansMono-Regular.ttf'

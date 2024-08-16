@@ -7,12 +7,8 @@ export default {
   get destFilename() {
     return path.resolve(`./build/${this.fontName}`)
   },
-  baseFontFilepath: path.resolve(
-    './resources/fonts/NotoSans/NotoSansTifinagh-Regular.ttf'
-  ),
-  annotationFontFilepath: path.resolve(
-    './resources/fonts/NotoSans/NotoSans-Regular.hinted.ttf'
-  ),
+  baseFontFilepath: path.resolve('./resources/fonts/NotoSans/NotoSansTifinagh-Regular.ttf'),
+  annotationFontFilepath: path.resolve('./resources/fonts/NotoSans/NotoSans-Regular.hinted.ttf'),
   fontName: 'RFC-Tifinagh-regular',
   formats: ['ttf', 'woff2'],
   inputFiles: './build/**/*.svg',
