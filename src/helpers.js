@@ -24,7 +24,7 @@ export default {
 
   setBuildConfig(cliArguments) {
     let config = require(path.resolve('./src/config/default.js')).default // eslint-disable-line global-require, import/no-dynamic-require
-    
+
     if (cliArguments.config) {
       config = require(path.resolve(`${cliArguments.config}`)).default // eslint-disable-line global-require, import/no-dynamic-require
     }
