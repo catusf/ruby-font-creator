@@ -15,7 +15,7 @@ export default {
   get layout() {
     return {
       base: layout.base.right(this.canvas),
-      annotation: layout.annotation.left(this.canvas)
+      ruby: layout.ruby.left(this.canvas)
     }
   }
 }

@@ -27,11 +27,11 @@ test('should create svg <path> with text', t => {
   t.is(data.length > 0, true)
 })
 
-test('should create svg <path> with annotation', t => {
+test('should create svg <path> with ruby', t => {
   const engine = ruby.loadFont(buildConfig.fontFilepath)
   const text = 'běi'
 
-  const doc = ruby.getAnnotation(engine, text)
+  const doc = ruby.getRuby(engine, text)
   const data = ruby.getData(doc)
 
   t.is(data.length > 0, true)

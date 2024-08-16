@@ -5,9 +5,9 @@ export default {
     fs.writeFileSync(filename, content)
   },
   save: (filename, content) => fs.writeFileSync(filename, content),
-  wrap: (text, annotation, options = { width: 80, height: 80 }) =>
+  wrap: (text, ruby, options = { width: 80, height: 80 }) =>
     `<svg width="${options.width}" height="${options.height}">
         ${text}
-        ${annotation}
+        ${ruby}
       </svg>`
 }

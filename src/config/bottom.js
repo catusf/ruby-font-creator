@@ -8,7 +8,7 @@ export default {
     return path.resolve(`./build/${this.fontName}`)
   },
   baseFontFilepath: path.resolve('./resources/fonts/NotoSansSC-Regular.ttf'),
-  annotationFontFilepath: path.resolve(
+  rubyFontFilepath: path.resolve(
     './resources/fonts/NotoSansMono-Regular.ttf'
   ),
   fontName: 'Leo-Pinyin-Bottom',
@@ -18,7 +18,7 @@ export default {
   get layout() {
     return {
       base: layout.base.bottom(this.canvas),
-      annotation: layout.annotation.bottom(this.canvas)
+      ruby: layout.ruby.bottom(this.canvas)
     }
   }
 }

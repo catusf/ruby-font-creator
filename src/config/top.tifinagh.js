@@ -10,7 +10,7 @@ export default {
   baseFontFilepath: path.resolve(
     './resources/fonts/NotoSans/NotoSansTifinagh-Regular.ttf'
   ),
-  annotationFontFilepath: path.resolve(
+  rubyFontFilepath: path.resolve(
     './resources/fonts/NotoSans/NotoSans-Regular.hinted.ttf'
   ),
   fontName: 'RFC-Tifinagh-regular',
@@ -20,7 +20,7 @@ export default {
   get layout() {
     return {
       base: layout.base.bottom(this.canvas),
-      annotation: layout.annotation.top(this.canvas)
+      ruby: layout.ruby.top(this.canvas)
     }
   }
 }

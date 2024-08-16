@@ -1,11 +1,11 @@
 export default {
-  annotation: {
+  ruby: {
     bottom: options => ({
       x: options.width / 2,
       y: options.height + 8,
       fontSize: 28,
       anchor: 'bottom center',
-      attributes: { fill: 'black', stroke: 'black', id: 'annotation' }
+      attributes: { fill: 'black', stroke: 'black', id: 'ruby' }
     }),
     left: options => ({
       x: 1,
@@ -23,10 +23,10 @@ export default {
     }),
     top: options => ({
       x: options.width / 2,
-      y: -6,
+      y: -8,
       fontSize: 28,
       anchor: 'top center',
-      attributes: { fill: 'black', stroke: 'black', id: 'annotation' }
+      attributes: { fill: 'black', stroke: 'black', id: 'ruby' }
     })
   },
   base: {

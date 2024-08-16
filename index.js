@@ -8,13 +8,13 @@ import svg from './src/svg'
 
 function generateSvg(data, config) {
   const baseEngine = ruby.loadFont(config.baseFontFilepath)
-  const annotationEngine = ruby.loadFont(config.annotationFontFilepath)
+  const rubyEngine = ruby.loadFont(config.rubyFontFilepath)
 
   for (let datum = 0; datum < data.length; datum += 1) {
     const char = data[datum]
     const svgContent = svg.wrap(
       ruby.getBase(baseEngine, char.glyph, config.layout.base),
-      ruby.getAnnotation(annotationEngine, char.ruby, config.layout.annotation)
+      ruby.getRuby(rubyEngine, char.ruby, config.layout.ruby)
     )
 
     const unicode = char.codepoint.replace('U+', 'u')
