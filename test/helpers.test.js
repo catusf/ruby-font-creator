@@ -44,7 +44,7 @@ test('setBuildConfig(): use default config', t => {
 })
 
 test('setBuildConfig(): use CLI --config', t => {
-  const argv = { config: './config/bottom.js' }
+  const argv = { config: './src/config/bottom.js' }
 
   const config = helpers.setBuildConfig(argv)
   t.is(config.layout.ruby.anchor, 'bottom center')
