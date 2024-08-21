@@ -2,11 +2,18 @@ import os
 import subprocess
 import itertools
 
+font_name_map = {
+'resources/fonts/NotoSansSC-Regular.ttf': 'Noto-Sans', 
+'resources/fonts/NotoSerifSC-Regular.ttf': 'Noto-Serif',
+'resources/fonts/XiaolaiMonoSC-Regular.ttf': 'Xiaolai-Mono',
+'resources/fonts/LXGWWenKaiMono-Regular.ttf': 'WenKai-Serif'
+}
+
 def get_font_name(data, base_font, config):
     # Determine parts of the font name based on parameters
     data_part = "Small" if "small" in data else ""
     config_part = config.replace("src/config/", "").replace(".js", "").capitalize()
-    font_part = "Sans" if "Sans" in base_font else "Serif"
+    font_part = font_name_map[base_font]
 
     # Construct the font name
     font_name = f"Leo-Pinyin-{data_part}-{config_part}-{font_part}"
@@ -29,8 +36,15 @@ def run_commands(data, base_font, config):
         subprocess.run(command, shell=True, check=True)
 
 def main():
-    data_options = ['src/data-small-org.json', 'src/data.json']
-    base_font_options = ['resources/fonts/NotoSansSC-Regular.ttf', 'resources/fonts/NotoSerifSC-Regular.ttf']
+    # data_options = ['src/data-small-org.json', 'src/data.json']
+    data_options = ['src/data-small-org.json']
+
+    base_font_options = [
+        # 'resources/fonts/NotoSansSC-Regular.ttf', 
+        # 'resources/fonts/NotoSerifSC-Regular.ttf',
+        'resources/fonts/XiaolaiMonoSC-Regular.ttf',
+        'resources/fonts/LXGWWenKaiMono-Regular.ttf'
+                         ]
     config_options = ['src/config/top.js', 'src/config/bottom.js', 'src/config/left.js']
 
     # Generate all combinations of the parameters

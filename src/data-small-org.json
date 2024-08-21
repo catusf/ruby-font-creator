@@ -1,5 +1,21 @@
 [
   {
+    "codepoint": "U+6211",
+    "ruby": "wǒ",
+    "glyph": "我"
+  },
+  {
+    "codepoint": "U+7231",
+    "ruby": "ài",
+    "glyph": "爱"
+  },
+  {
+    "codepoint": "U+4F60",
+    "ruby": "nǐ",
+    "glyph": "你"
+  },
+
+  {
     "codepoint": "U+3400",
     "ruby": "qiū",
     "glyph": "㐀"

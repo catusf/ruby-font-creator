@@ -3,6 +3,14 @@ import path from 'path'
 import mkdirp from 'mkdirp'
 
 export default {
+  setCommonConfig(config) {
+    let common_config = require(path.resolve('./src/config/common.js')).default // eslint-disable-line global-require, import/no-dynamic-require
+    const newConfig = Object.assign({}, config)
+
+    // Copy config from common_config to newconfig 
+    return newConfig
+  },
+
   setFontName(config, cliArguments) {
     const newConfig = Object.assign({}, config)
 
@@ -33,7 +41,6 @@ export default {
     return newConfig
   },
 
-
   setDataSource(config, cliArguments) {
     const newConfig = Object.assign({}, config)
 
@@ -51,7 +58,10 @@ export default {
       config = require(path.resolve(`${cliArguments.config}`)).default // eslint-disable-line global-require, import/no-dynamic-require
     }
 
-    return config
+    let common_config = require(path.resolve('./src/config/common.js')).default // eslint-disable-line global-require, import/no-dynamic-require
+    const newConfig = Object.assign({}, config, common_config)
+
+    return newConfig
   },
   prepare(config) {
     try {
