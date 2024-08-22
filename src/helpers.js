@@ -4,10 +4,11 @@ import mkdirp from 'mkdirp'
 
 export default {
   setCommonConfig(config) {
-    let common_config = require(path.resolve('./src/config/common.js')).default // eslint-disable-line global-require, import/no-dynamic-require
+    const common_config = require(path.resolve('./src/config/common.js'))
+      .default // eslint-disable-line global-require, import/no-dynamic-require
     const newConfig = Object.assign({}, config)
 
-    // Copy config from common_config to newconfig 
+    // Copy config from common_config to newconfig
     return newConfig
   },
 
@@ -58,7 +59,8 @@ export default {
       config = require(path.resolve(`${cliArguments.config}`)).default // eslint-disable-line global-require, import/no-dynamic-require
     }
 
-    let common_config = require(path.resolve('./src/config/common.js')).default // eslint-disable-line global-require, import/no-dynamic-require
+    const common_config = require(path.resolve('./src/config/common.js'))
+      .default // eslint-disable-line global-require, import/no-dynamic-require
     const newConfig = Object.assign({}, config, common_config)
 
     return newConfig

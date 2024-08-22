@@ -8,5 +8,5 @@ export default {
   },
   formats: ['ttf'],
   inputFiles: './build/**/*.svg',
-  workingDir: path.resolve('./build/svg'),
+  workingDir: path.resolve('./build/svg')
 }
