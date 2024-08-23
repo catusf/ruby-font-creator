@@ -4,6 +4,7 @@ import os
 import subprocess
 import itertools
 
+
 def run_commands(data, config):
     # Generate the font name
 
@@ -17,12 +18,12 @@ def run_commands(data, config):
     # Run the commands
     for command in commands:
         print(f"Running: {command}")
-        subprocess.run(command, shell=True, check=True)
+        subprocess.run(command, shell=True, check=True, executable="/bin/bash")
 
 
 def main():
-    # data_options = ['src/data-small-org.json', 'src/data.json']
-    data_options = ["src/data-small-org.json"]
+    data_options = ["src/data-small-org.json", "src/data.json"]
+    # data_options = ["src/data-small-org.json"]
 
     config_options = [
         "src/config/default.js",
