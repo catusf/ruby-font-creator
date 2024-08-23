@@ -17,3 +17,4 @@ for config_file in "$CONFIG_DIR"/*.js; do
     echo "Finished processing $config_file"
     echo ""
 done
+
