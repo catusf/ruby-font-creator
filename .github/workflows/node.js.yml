@@ -29,3 +29,23 @@ jobs:
     - run: npm install -g yarn
     - run: npm install
     - run: npm test
+    
+    - name: Build all fonts
+      run: |
+        ./bin/run.sh
+        
+    - name: Zip all artifacts for release
+      run: |
+        zip -9 -j $OUTPUT_DIR/all_fonts.zip $OUTPUT_DIR/*.ttf
+        
+    - name: Create a new release draft
+      id: create_release
+      uses: ncipollo/release-action@v1
+      with:
+          artifacts: "$OUTPUT_DIR/all_fonts.zip"
+          body: If you can read this, we have forgotten to fill in the changelog. Sorry!
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref }}
+          draft: true
+          name: Release ${{ github.ref }}
+
