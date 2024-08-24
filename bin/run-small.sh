@@ -7,6 +7,11 @@ CONFIG_DIR="src/config"
 for config_file in "$CONFIG_DIR"/*.js; do
     echo "Processing $config_file (data-small.json)"
     
+    if [[ $config_file == *"common"* ]]; then
+        echo "Skipping $config_file (contains 'common')"
+        continue
+    fi
+
     # Run the node command with the specified options and configuration file
     time node --max_old_space_size=8192 \
               --optimize_for_size \

@@ -85,7 +85,7 @@ export default {
     return new Promise((resolve, reject) => {
       // eslint-disable-next-line func-names
       config.formats.map(format => {
-        const directoryPath = path.resolve(`./build`)
+        const directoryPath = path.resolve(`./output`)
         const filePath = `${directoryPath}/${config.fontName}.${format}`
 
         return self
