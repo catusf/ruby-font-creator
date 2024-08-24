@@ -31,7 +31,7 @@ jobs:
     - run: npm test
     
     - name: Build all fonts
-      run: ./bin/run.sh
+      run: ./bin/run-small.sh
         
     - name: Zip all artifacts for release
       run: zip -9 -j build/all_fonts.zip build/*.ttf
