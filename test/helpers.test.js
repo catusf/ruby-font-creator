@@ -84,7 +84,7 @@ test('generateFontFiles()', async t => {
   }
 
   await helpers.generateFontFiles(content, config).then(() => {
-    const directoryPath = path.resolve('./build')
+    const directoryPath = path.resolve('./output')
     t.true(fs.existsSync(`${directoryPath}/RFC-config-font-name.ttf`))
     fs.unlinkSync(`${directoryPath}/RFC-config-font-name.ttf`)
   })
