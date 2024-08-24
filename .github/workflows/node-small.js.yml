@@ -3,14 +3,19 @@
 
 name: Build all fonts with small data set
 
+concurrency: 
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
 on:
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+
 env:
   INPUT_DIR: ./config
-  OUTPUT_DIR: ./build
+  OUTPUT_DIR: ./output
 
 jobs:
   build:

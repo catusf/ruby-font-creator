@@ -5,7 +5,7 @@ CONFIG_DIR="src/config"
 
 # Iterate over each .js file in the directory
 for config_file in "$CONFIG_DIR"/*.js; do
-    echo "Processing $config_file"
+    echo "Processing $config_file (data.json)"
     
     # Run the node command with the specified options and configuration file
     time node --max_old_space_size=8192 \
@@ -14,7 +14,7 @@ for config_file in "$CONFIG_DIR"/*.js; do
               --require babel-core/register \
               ./index.js --config="$config_file" --data=src/data.json
               
-    echo "Finished processing $config_file"
+    echo "Finished processing $config_file  (data.json)"
     echo ""
 done
 
