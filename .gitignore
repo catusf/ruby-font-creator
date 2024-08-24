@@ -14,10 +14,10 @@ resources/saxon/*
 *.zip
 build/
 test/*.svg
-
+output/
 ###Node###
 logs
 node_modules
 package-lock.json
 yarn.lock
-resources/fonts/NotoSerifSC-Regular.ttf:Zone.Identifier
+*.Identifier
