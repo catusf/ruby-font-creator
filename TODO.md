@@ -5,3 +5,4 @@ TODO List
 - [ ] Tạo thêm hình ảnh font sau khi tạo ra
 - [ ] Make right option
 - [ ] Change font output folder to `output`
+- [ ] Remove chars that not in input fonts
