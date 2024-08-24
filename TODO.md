@@ -7,5 +7,6 @@ TODO List
 - [x] Remove chars that not in input fonts
 - [X] Build serif version
 - [x] Tạo thêm hình ảnh font sau khi tạo ra
+- [ ] Change font name to remove -
 - [X] Build 4 variants: top/bottom/left/right
 - [X] Change font output folder to `output`
