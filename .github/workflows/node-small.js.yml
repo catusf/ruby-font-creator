@@ -42,8 +42,8 @@ jobs:
       run: ./bin/run-small.sh
         
     - name: Zip all artifacts for release
-      run: zip -9 -j output/all_fonts.zip output/*.ttf |
-
+      run: zip -9 -j output/all_fonts.zip output/*.ttf &&
+        ls output/*.zip -ll
         
     - name: Create a new release draft
       id: create_release
