@@ -546,6 +546,7 @@ font_path = "resources/fonts/NotoSansSC-Regular.ttf"
 font_path = "resources/fonts/LXGWWenKaiMono-Regular.ttf"
 font_path = "resources/fonts/SourceHanSansCN-Regular.ttf"
 font_path = "resources/fonts/WqyMono.ttf"
+font_path = "output/Pinyin-Test-Bottom-Small.ttf"
 
 get_unicode_ranges_with_names(font_path)
 

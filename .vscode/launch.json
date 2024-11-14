@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\index.js",
+            "args": [
+                "--max_old_space_size=8192",
+                "--optimize_for_size",
+                "--stack_size=4096",
+                "--require",
+                "babel-core/register",
+                "--config=./src/config/catus.bottom.js",
+                "--data=src/data-small-org.json",
+                "--font-name=Leo-Pinyin-Bottom",
+                "--base-font=resources/fonts/NotoSerifSC-Regular.ttf",
+                "--ruby-font=resources/fonts/LXGWWenKaiMono-Regular.ttf",
+            ]
+        }
+    ]
+}
+
+
