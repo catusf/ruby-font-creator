@@ -35,11 +35,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install -g yarn
-    - run: npm install
+    - run: yarn install
     - run: npm test
     
     - name: Build all fonts
-      run: ./bin/run.sh
+      run: ./run.py
         
     - name: Zip all artifacts for release
       run: zip -9 -j output/all_fonts.zip output/*.ttf
