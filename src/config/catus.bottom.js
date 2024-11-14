@@ -1,5 +1,23 @@
 import path from 'path'
+
+
+
+
+
+
+
+
+
 import layout from '../layouts'
+
+
+
+
+
+
+
+
+
 
 export default {
   canvas: { width: 80, height: 80 },
@@ -11,9 +29,17 @@ export default {
   get layout() {
     return {
       base: this.baseLayout(this.canvas),
-      ruby: this.rubyLayout(this.canvas)
+      ruby: this.rubyLayout(this.canvas),
+      norm: this.normLayout(this.canvas)
     }
   },
+  normLayout: options => ({
+    x: options.width / 2,
+    y: options.height,
+    fontSize: 80,
+    anchor: 'bottom center',
+    attributes: { fill: 'black', stroke: 'black', id: 'ruby' }
+  }),
   rubyLayout: options => ({
     x: options.width / 2,
     y: options.height + 6,
