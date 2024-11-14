@@ -2,32 +2,22 @@ import jsonfile from 'jsonfile'
 import webfont from 'webfont'
 import { argv } from 'yargs'
 
-
-
-
-
-
 import helpers from './src/helpers'
 import ruby from './src/ruby'
 import svg from './src/svg'
-
-
-
-
-
 
 function generateSvg(data, config) {
   const baseEngine = ruby.loadFont(config.baseFontFilepath)
   const rubyEngine = ruby.loadFont(config.rubyFontFilepath)
   const build_folder = `${config.workingDir}`
 
-  const fs = require('fs');
+  const fs = require('fs')
 
   if (!fs.existsSync(build_folder)) {
-    fs.mkdirSync(build_folder, { recursive: true });
-    console.log(`Folder created: ${build_folder}`);
+    fs.mkdirSync(build_folder, { recursive: true })
+    console.log(`Folder created: ${build_folder}`)
   } else {
-    console.log(`Folder already exists: ${build_folder}`);
+    console.log(`Folder already exists: ${build_folder}`)
   }
 
   for (let datum = 0; datum < data.length; datum += 1) {
