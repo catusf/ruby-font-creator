@@ -14,7 +14,7 @@ resources/saxon/*
 *.zip
 build/
 test/*.svg
-output/
+#output/
 ###Node###
 logs
 node_modules

@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 
-import os
 import subprocess
 import itertools
 
 
-def run_commands(data, config):
+def run_build_commands(data, config):
     # Generate the font name
 
     # Define the commands
@@ -23,7 +22,6 @@ def run_commands(data, config):
 
 def main():
     data_options = ["src/data-small-org.json", "src/data.json"]
-    # data_options = ["src/data-small-org.json"]
 
     config_options = [
         "src/config/default.js",
@@ -47,7 +45,7 @@ def main():
     # Loop through each combination and run the commands
     for data, config in combinations:
         print(f"Processing combination: data={data}, config={config}")
-        run_commands(data, config)
+        run_build_commands(data, config)
 
 
 if __name__ == "__main__":
