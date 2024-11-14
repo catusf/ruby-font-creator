@@ -6,10 +6,6 @@ Font creator to help students **learn and read foreign languages faster** by app
 
 # Font Samplers
 
-This document showcases font samplers created from various font files located in the `output` folder. Each sampler image corresponds to a specific font file, demonstrating how the font renders the provided text in both Simplified and Traditional Chinese.
-
-## Font Samplers
-
 ### Tigris-Pinyin-Bottom-Handwritten
 - **Font file**: [Tigris-Pinyin-Bottom-Handwritten.ttf](output/Tigris-Pinyin-Bottom-Handwritten.ttf)
 
