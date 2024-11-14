@@ -97,7 +97,8 @@ function start(cliArguments) {
 
     helpers.prepare(config)
 
-    return
+    // Use when only generate the config then quit
+    // return
 
     generateSvg(data, config)
 
