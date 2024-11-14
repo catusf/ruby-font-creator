@@ -1,9 +1,80 @@
-[![Build Status](https://travis-ci.org/parlr/ruby-font-creator.svg?branch=master)](https://travis-ci.org/parlr/ruby-font-creator)
-[![Code Climate](https://codeclimate.com/github/parlr/ruby-font-creator/badges/gpa.svg)](https://codeclimate.com/github/parlr/ruby-font-creator)
+
 
 # Ruby Font Creator
 
 Font creator to help students **learn and read foreign languages faster** by appending pronunciation or meaning to each glyph.
+
+# Font Samplers
+
+This document showcases font samplers created from various font files located in the `output` folder. Each sampler image corresponds to a specific font file, demonstrating how the font renders the provided text in both Simplified and Traditional Chinese.
+
+## Font Samplers
+
+### Tigris-Pinyin-Bottom-Handwritten
+- **Font file**: [Tigris-Pinyin-Bottom-Handwritten.ttf](output/Tigris-Pinyin-Bottom-Handwritten.ttf)
+
+![Tigris-Pinyin-Bottom-Handwritten](output/Tigris-Pinyin-Bottom-Handwritten.png)
+
+### Tigris-Pinyin-Left-Handwritten
+- **Font file**: [Tigris-Pinyin-Left-Handwritten.ttf](output/Tigris-Pinyin-Left-Handwritten.ttf)
+
+![Tigris-Pinyin-Left-Handwritten](output/Tigris-Pinyin-Left-Handwritten.png)
+
+### Tigris-Pinyin-Top-Handwritten
+- **Font file**: [Tigris-Pinyin-Top-Handwritten.ttf](output/Tigris-Pinyin-Top-Handwritten.ttf)
+
+![Tigris-Pinyin-Top-Handwritten](output/Tigris-Pinyin-Top-Handwritten.png)
+
+### Leo-Pinyin-Bottom-Serif
+- **Font file**: [Leo-Pinyin-Bottom-Serif.ttf](output/Leo-Pinyin-Bottom-Serif.ttf)
+
+![Leo-Pinyin-Bottom-Serif](output/Leo-Pinyin-Bottom-Serif.png)
+
+### Leo-Pinyin-Left-Serif
+- **Font file**: [Leo-Pinyin-Left-Serif.ttf](output/Leo-Pinyin-Left-Serif.ttf)
+
+![Leo-Pinyin-Left-Serif](output/Leo-Pinyin-Left-Serif.png)
+
+### Leo-Pinyin-Top-Serif
+- **Font file**: [Leo-Pinyin-Top-Serif.ttf](output/Leo-Pinyin-Top-Serif.ttf)
+
+![Leo-Pinyin-Top-Serif](output/Leo-Pinyin-Top-Serif.png)
+
+### Onca-Pinyin-Bottom-Serif
+- **Font file**: [Onca-Pinyin-Bottom-Serif.ttf](output/Onca-Pinyin-Bottom-Serif.ttf)
+
+![Onca-Pinyin-Bottom-Serif](output/Onca-Pinyin-Bottom-Serif.png)
+
+### Onca-Pinyin-Left-Serif
+- **Font file**: [Onca-Pinyin-Left-Serif.ttf](output/Onca-Pinyin-Left-Serif.ttf)
+
+![Onca-Pinyin-Left-Serif](output/Onca-Pinyin-Left-Serif.png)
+
+### Onca-Pinyin-Top-Serif
+- **Font file**: [Onca-Pinyin-Top-Serif.ttf](output/Onca-Pinyin-Top-Serif.ttf)
+
+![Onca-Pinyin-Top-Serif](output/Onca-Pinyin-Top-Serif.png)
+
+### Catus-Pinyin-Bottom-Sans
+- **Font file**: [Catus-Pinyin-Bottom-Sans.ttf](output/Catus-Pinyin-Bottom-Sans.ttf)
+
+![Catus-Pinyin-Bottom-Sans](output/Catus-Pinyin-Bottom-Sans.png)
+
+### Catus-Pinyin-Left-Sans
+- **Font file**: [Catus-Pinyin-Left-Sans.ttf](output/Catus-Pinyin-Left-Sans.ttf)
+
+![Catus-Pinyin-Left-Sans](output/Catus-Pinyin-Left-Sans.png)
+
+### Catus-Pinyin-Top-Sans
+- **Font file**: [Catus-Pinyin-Top-Sans.ttf](output/Catus-Pinyin-Top-Sans.ttf)
+
+![Catus-Pinyin-Top-Sans](output/Catus-Pinyin-Top-Sans.png)
+
+### Additional Resources
+
+- **Font ZIP**: [PinyinFonts.zip](output/PinyinFonts.zip)
+  - This archive contains additional font files used in the samplers.
+
 
 ### Features
 
