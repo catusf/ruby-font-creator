@@ -39,7 +39,7 @@ jobs:
     - run: npm test
     
     - name: Build all fonts
-      run: ./run.py
+      run: ./run_all.py
         
     - name: Zip all artifacts for release
       run: zip -9 -j output/all_fonts.zip output/*.ttf
