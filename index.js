@@ -2,23 +2,9 @@ import jsonfile from 'jsonfile'
 import webfont from 'webfont'
 import { argv } from 'yargs'
 
-
-
-
-
-
-
-
 import helpers from './src/helpers'
 import ruby from './src/ruby'
 import svg from './src/svg'
-
-
-
-
-
-
-
 
 function generateSvg(data, config) {
   const baseEngine = ruby.loadFont(config.baseFontFilepath)
@@ -58,24 +44,23 @@ function buildFont(config) {
 
 // Function to extract value of --config
 function getConfigValue(args) {
-  const configArg = args.find(arg => arg.startsWith('--config='));
+  const configArg = args.find(arg => arg.startsWith('--config='))
   if (configArg) {
     // Extract value after the '=' sign
-    return configArg.split('=')[1];
+    return configArg.split('=')[1]
   }
-  return null; // Return null if --config is not found
+  return null // Return null if --config is not found
 }
 
 // Modify the filename to use .json instead of .js, or return 'default.json' if no config found
 function getConfigData(configValue) {
   if (configValue) {
     // Replace .js extension with .json
-    return configValue.replace('.js', '.json');
+    return configValue.replace('.js', '.json')
   }
   // Return 'default.json' if no config file is found
-  return 'default.json';
+  return 'default.json'
 }
-
 
 function start(cliArguments) {
   let config = helpers.setBuildConfig(cliArguments)
@@ -83,27 +68,27 @@ function start(cliArguments) {
   config = helpers.setFontName(config, cliArguments)
   config = helpers.setBaseFontFilepath(config, cliArguments)
   config = helpers.setRubyFontFilepath(config, cliArguments)
-  
-  const args = process.argv;
 
-  const config_value = getConfigValue(args);
-  const config_data_file = getConfigData(config_value);
+  const args = process.argv
+
+  const config_value = getConfigValue(args)
+  const config_data_file = getConfigData(config_value)
 
   // Convert the object to a JSON string
-  const jsonData = JSON.stringify(config, null, 2);
+  const jsonData = JSON.stringify(config, null, 2)
 
-  const fs = require('fs');
+  const fs = require('fs')
 
   // Write the JSON string to a file synchronously
   try {
-      fs.writeFileSync(config_data_file, jsonData);
-      console.log('Data has been saved to data.json');
+    fs.writeFileSync(config_data_file, jsonData)
+    console.log('Data has been saved to data.json')
   } catch (err) {
-      console.log('Error writing to file:', err);
+    console.log('Error writing to file:', err)
   }
 
   // Log the entire arguments array
-  console.log(args);
+  console.log(args)
 
   jsonfile.readFile(config.dataSource, (err, data) => {
     if (err) {
@@ -112,7 +97,7 @@ function start(cliArguments) {
 
     helpers.prepare(config)
 
-    return;
+    return
 
     generateSvg(data, config)
 
