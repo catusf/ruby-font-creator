@@ -3,9 +3,9 @@
     "width": 80,
     "height": 80
   },
-  "baseFontFilepath": "/workspaces/ruby-font-creator/resources/fonts/NotoSansSC-Regular.ttf",
+  "baseFontFilepath": "/workspaces/ruby-font-creator/resources/fonts/NotoSerifSC-Regular.ttf",
   "rubyFontFilepath": "/workspaces/ruby-font-creator/resources/fonts/LXGWWenKaiMono-Regular.ttf",
-  "fontName": "Catus-Pinyin-Bottom-Sans",
+  "fontName": "Onca-Pinyin-Bottom-Serif",
   "layout": {
     "base": {
       "x": 40,
