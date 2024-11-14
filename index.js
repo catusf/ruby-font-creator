@@ -30,9 +30,13 @@ import { argv } from 'yargs'
 
 
 
+
+
 import helpers from './src/helpers'
 import ruby from './src/ruby'
 import svg from './src/svg'
+
+
 
 
 
@@ -72,16 +76,6 @@ function generateSvg(data, config) {
   // Define the codepoint you're searching for
   const targetCodePoint = "U+1ED9";
 
-  // Check if the code point exists in the existingData array (by checking codepoint field)
-  const inExistingData = data.some(item => item.codepoint === targetCodePoint);
-
-  if (inExistingData) {
-    console.log(`${targetCodePoint} exists in the existingData array.`);
-  } else {
-    console.log(`${targetCodePoint} does not exist in the existingData array.`);
-  }  
-  // config.set_canvas(baseEngine.font.unitsPerEm, baseEngine.font.unitsPerEm)
-  // config.layout;
   const fs = require('fs')
 
   if (!fs.existsSync(build_folder)) {
@@ -167,9 +161,9 @@ function addCodePointsToExistingData(codePoints, existingData) {
   });
 
   // Write the updated array back to the file
-  fs.writeFileSync('existingData.json', JSON.stringify(existingData, null, 2));
+  // fs.writeFileSync('existingData.json', JSON.stringify(existingData, null, 2));
 
-  console.log('Updated data written to existingData.json');
+  // console.log('Updated data written to existingData.json');
 }
 
 function start(cliArguments) {
@@ -192,13 +186,13 @@ function start(cliArguments) {
   // Write the JSON string to a file synchronously
   try {
     fs.writeFileSync(config_data_file, jsonData)
-    console.log('Data has been saved to data.json')
+    console.log('Data has been saved to ' + config_data_file)
   } catch (err) {
     console.log('Error writing to file:', err)
   }
 
   // Log the entire arguments array
-  console.log(args)
+  // console.log(args)
 
   jsonfile.readFile(config.dataSource, (err, data) => {
     if (err) {
