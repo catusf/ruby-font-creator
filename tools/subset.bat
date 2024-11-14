@@ -1,0 +1,2 @@
+ pyftsubset "C:\Users\ITFDL\OneDrive - FPT Corporation\Personal\Playground\ruby-font-creator\resources\fonts\NotoSerifSC-Regular.ttf" --unicodes="U+0000-007F" --unicodes="U+0080-00FF" --unicodes="U+0100-017F" --unicodes="U+0180-024F" --unicodes="U+0300-036F" --output-file=subset1.ttf
+ 

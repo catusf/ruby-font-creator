@@ -486,6 +486,22 @@ UNICODE_BLOCKS = [
 ]
 
 
+def get_upeem(font_path):
+    # Load the font file
+    font = TTFont(font_path)
+
+    # Check if the 'head' table exists (it should exist for most fonts)
+    if 'head' not in font:
+        raise ValueError("No 'head' table found in font.")
+
+    # Get the head table, which contains the UPEM value
+    head_table = font['head']
+    
+    # The UPEM value is stored in the 'unitsPerEm' attribute of the 'head' table
+    upeem = head_table.unitsPerEm
+
+    return upeem
+    
 def get_unicode_ranges_with_names(font_path):
     # Load the font file
     font = TTFont(font_path)
@@ -539,7 +555,7 @@ def get_unicode_ranges_with_names(font_path):
 
     for block_name, start, end, covered, percentage in block_ranges:
         print(
-            f"  {block_name}: U+{start:04X} - U+{end:04X}, Covered: {covered} ({percentage:.2f}%)"
+            f"  U+{start:04X}-U+{end:04X} {block_name}\tCovered: {covered} ({percentage:.2f}%)"
         )
 
     # print(f"Number of U blocks: {len(UNICODE_BLOCKS)}")
@@ -551,6 +567,8 @@ def get_unicode_ranges_with_names(font_path):
         f"Covered code points: {covered_code_points} ({(covered_code_points / total_code_points) * 100:.4f}%)"
     )
     print(f"Missing: {count_codepoints-covered_code_points}")
+    upeem = get_upeem(font_path)
+    print(f'Font UPEEM: {upeem}')
 
 
 # font_path = "resources/Hanzi-Pinyin-Font.top (1).ttf"  # Path to your font file
