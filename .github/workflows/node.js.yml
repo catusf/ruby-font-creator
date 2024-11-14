@@ -53,5 +53,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ github.ref }}
           draft: true
-          name: Release ${{ github.ref }} $(date +'%Y-%m-%d_%H-%M-%S')
-
+          name: Release-Big-${{ github.ref_name }}-${{ env.RELEASE_DATE }}
