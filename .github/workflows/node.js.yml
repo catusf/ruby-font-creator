@@ -44,14 +44,17 @@ jobs:
     - name: Zip all artifacts for release
       run: zip -9 -j output/all_fonts.zip output/*.ttf
         
+    - name: Set the release date
+      id: set_date
+      run: echo "RELEASE_DATE=$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
+
     - name: Create a new release draft
       id: create_release
       uses: ncipollo/release-action@v1
       with:
-          artifacts: output/all_fonts.zip
-          body: If you can read this, we have forgotten to fill in the changelog. Sorry!
-          token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ github.ref }}
-          draft: true
-          name: Release ${{ github.ref }}
-
+        artifacts: output/all_fonts.zip
+        body: If you can read this, we have forgotten to fill in the changelog. Sorry!
+        token: ${{ secrets.GITHUB_TOKEN }}
+        tag: ${{ github.ref }}
+        draft: true
+        name: Release-Big-${{ github.ref_name }}-${{ env.RELEASE_DATE }}
