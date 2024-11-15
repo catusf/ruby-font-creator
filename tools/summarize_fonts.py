@@ -98,13 +98,13 @@ def save_summary_to_json(summary_list):
 def convert_summary_to_markdown(summary_list):
     markdown_content = "# Font Summary\n\n"
 
-    # Markdown table headers (changed order here)
-    markdown_content += "| Config File | Base Font Name | Ruby Font Name | Base Font Filepath | Ruby Font Filepath |\n"
-    markdown_content += "|-------------|----------------|----------------|--------------------|--------------------|\n"
+    # Markdown table headers (changed order here, fontName is second column)
+    markdown_content += "| Config File | Font Name | Base Font Name | Ruby Font Name | Base Font Filepath | Ruby Font Filepath |\n"
+    markdown_content += "|-------------|-----------|----------------|----------------|--------------------|--------------------|\n"
 
     # Add rows for each summary entry
     for summary in summary_list:
-        markdown_content += f"| {summary['config']} | {summary.get('baseFontName', 'N/A')} | {summary.get('rubyFontName', 'N/A')} | {summary.get('baseFontFilepath', 'N/A')} | {summary.get('rubyFontFilepath', 'N/A')} |\n"
+        markdown_content += f"| {summary['config']} | {summary.get('fontName', 'N/A')} | {summary.get('baseFontName', 'N/A')} | {summary.get('rubyFontName', 'N/A')} | {summary.get('baseFontFilepath', 'N/A')} | {summary.get('rubyFontFilepath', 'N/A')} |\n"
 
     return markdown_content
 
