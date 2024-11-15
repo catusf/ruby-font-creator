@@ -5,7 +5,7 @@
   },
   "baseFontFilepath": "/workspaces/ruby-font-creator/resources/fonts/NotoSansSC-Regular.ttf",
   "rubyFontFilepath": "/workspaces/ruby-font-creator/resources/fonts/LXGWWenKaiMono-Regular.ttf",
-  "fontName": "Catus-Pinyin-Left-Sans",
+  "fontName": "Pinyin-Catus-Left-Sans",
   "layout": {
     "base": {
       "x": 50,

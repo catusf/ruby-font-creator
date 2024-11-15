@@ -5,7 +5,7 @@
   },
   "baseFontFilepath": "/workspaces/ruby-font-creator/resources/fonts/NotoSerifSC-Regular.ttf",
   "rubyFontFilepath": "/workspaces/ruby-font-creator/resources/fonts/LXGWWenKaiMono-Regular.ttf",
-  "fontName": "Onca-Pinyin-Bottom-Serif",
+  "fontName": "Pinyin-Onca-Bottom-Serif",
   "layout": {
     "base": {
       "x": 40,

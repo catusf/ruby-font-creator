@@ -5,7 +5,7 @@
   },
   "baseFontFilepath": "/workspaces/ruby-font-creator/resources/fonts/XiaolaiMonoSC-without-Hangul-Regular.ttf",
   "rubyFontFilepath": "/workspaces/ruby-font-creator/resources/fonts/LXGWWenKaiMono-Regular.ttf",
-  "fontName": "Tigris-Pinyin-Top-Handwritten",
+  "fontName": "Pinyin-Tigris-Top-Handwritten",
   "layout": {
     "base": {
       "x": 40,

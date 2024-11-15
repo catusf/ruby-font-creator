@@ -14,7 +14,21 @@
     "ruby": "nǐ",
     "glyph": "你"
   },
-
+  {
+    "codepoint": "U+5B66",
+    "ruby": "xué",
+    "glyph": "学"
+  },
+  {
+    "codepoint": "U+4E2D",
+    "ruby": "zhōng",
+    "glyph": "中"
+  },
+  {
+    "codepoint": "U+6587",
+    "ruby": "wén",
+    "glyph": "文"
+  },
   {
     "codepoint": "U+3400",
     "ruby": "qiū",

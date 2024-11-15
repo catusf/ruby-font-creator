@@ -5,7 +5,7 @@
   },
   "baseFontFilepath": "/workspaces/ruby-font-creator/resources/fonts/LXGWWenKaiMono-Regular.ttf",
   "rubyFontFilepath": "/workspaces/ruby-font-creator/resources/fonts/LXGWWenKaiMono-Regular.ttf",
-  "fontName": "Leo-Pinyin-Left-Serif",
+  "fontName": "Pinyin-Leo-Left-Serif",
   "layout": {
     "base": {
       "x": 50,
