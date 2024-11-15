@@ -19,7 +19,7 @@
                 "--require",
                 "babel-core/register",
                 "--config=./src/config/catus.bottom.js",
-                "--data=src/data-small-org.json",
+                "--data=src/data-small.json",
                 "--font-name=Pinyin-Leo-Bottom",
                 "--base-font=resources/fonts/NotoSerifSC-Regular.ttf",
                 "--ruby-font=resources/fonts/LXGWWenKaiMono-Regular.ttf",

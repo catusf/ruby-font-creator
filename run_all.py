@@ -109,7 +109,7 @@ def run_build_commands(data, config, save_config):
 def main(save_config=False, small_data=False):
 
     if small_data:
-        data_options = ["src/data-small-org.json"]
+        data_options = ["src/data-small.json"]
     else:
         data_options = ["src/data.json"]
 

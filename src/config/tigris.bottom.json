@@ -30,7 +30,7 @@
       }
     }
   },
-  "dataSource": "/workspaces/ruby-font-creator/src/data-small-org.json",
+  "dataSource": "/workspaces/ruby-font-creator/src/data-small.json",
   "formats": [
     "ttf"
   ],
