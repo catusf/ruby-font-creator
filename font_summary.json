@@ -1,0 +1,106 @@
+[
+    {
+        "config": "catus.bottom.json",
+        "baseFontFilepath": "resources/fonts/NotoSansSC-Regular.ttf",
+        "rubyFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "fontName": "Pinyin Catus Bottom Sans",
+        "baseFontName": "Noto Sans SC",
+        "rubyFontName": "LXGW WenKai Mono"
+    },
+    {
+        "config": "catus.left.json",
+        "baseFontFilepath": "resources/fonts/NotoSansSC-Regular.ttf",
+        "rubyFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "fontName": "Pinyin Catus Left Sans",
+        "baseFontName": "Noto Sans SC",
+        "rubyFontName": "LXGW WenKai Mono"
+    },
+    {
+        "config": "catus.top.json",
+        "baseFontFilepath": "resources/fonts/NotoSansSC-Regular.ttf",
+        "rubyFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "fontName": "Pinyin Catus Top Sans",
+        "baseFontName": "Noto Sans SC",
+        "rubyFontName": "LXGW WenKai Mono"
+    },
+    {
+        "config": "default.json",
+        "baseFontFilepath": "resources/fonts/NotoSansSC-Regular.ttf",
+        "rubyFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "fontName": "Pinyin Catus Top Sans",
+        "baseFontName": "Noto Sans SC",
+        "rubyFontName": "LXGW WenKai Mono"
+    },
+    {
+        "config": "leo.bottom.json",
+        "baseFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "rubyFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "fontName": "Pinyin Leo Bottom Serif",
+        "baseFontName": "LXGW WenKai Mono",
+        "rubyFontName": "LXGW WenKai Mono"
+    },
+    {
+        "config": "leo.left.json",
+        "baseFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "rubyFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "fontName": "Pinyin Leo Left Serif",
+        "baseFontName": "LXGW WenKai Mono",
+        "rubyFontName": "LXGW WenKai Mono"
+    },
+    {
+        "config": "leo.top.json",
+        "baseFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "rubyFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "fontName": "Pinyin Leo Top Serif",
+        "baseFontName": "LXGW WenKai Mono",
+        "rubyFontName": "LXGW WenKai Mono"
+    },
+    {
+        "config": "onca.bottom.json",
+        "baseFontFilepath": "resources/fonts/NotoSerifSC-Regular.ttf",
+        "rubyFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "fontName": "Pinyin Onca Bottom Serif",
+        "baseFontName": "Noto Serif SC",
+        "rubyFontName": "LXGW WenKai Mono"
+    },
+    {
+        "config": "onca.left.json",
+        "baseFontFilepath": "resources/fonts/NotoSerifSC-Regular.ttf",
+        "rubyFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "fontName": "Pinyin Onca Left Serif",
+        "baseFontName": "Noto Serif SC",
+        "rubyFontName": "LXGW WenKai Mono"
+    },
+    {
+        "config": "onca.top.json",
+        "baseFontFilepath": "resources/fonts/NotoSerifSC-Regular.ttf",
+        "rubyFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "fontName": "Pinyin Onca Top Serif",
+        "baseFontName": "Noto Serif SC",
+        "rubyFontName": "LXGW WenKai Mono"
+    },
+    {
+        "config": "tigris.bottom.json",
+        "baseFontFilepath": "resources/fonts/XiaolaiMonoSC-without-Hangul-Regular.ttf",
+        "rubyFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "fontName": "Pinyin Tigris Bottom Handwritten",
+        "baseFontName": "xiaolaiMonoSC",
+        "rubyFontName": "LXGW WenKai Mono"
+    },
+    {
+        "config": "tigris.left.json",
+        "baseFontFilepath": "resources/fonts/XiaolaiMonoSC-without-Hangul-Regular.ttf",
+        "rubyFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "fontName": "Pinyin Tigris Left Handwritten",
+        "baseFontName": "xiaolaiMonoSC",
+        "rubyFontName": "LXGW WenKai Mono"
+    },
+    {
+        "config": "tigris.top.json",
+        "baseFontFilepath": "resources/fonts/XiaolaiMonoSC-without-Hangul-Regular.ttf",
+        "rubyFontFilepath": "resources/fonts/LXGWWenKaiMono-Regular.ttf",
+        "fontName": "Pinyin Tigris Top Handwritten",
+        "baseFontName": "xiaolaiMonoSC",
+        "rubyFontName": "LXGW WenKai Mono"
+    }
+]

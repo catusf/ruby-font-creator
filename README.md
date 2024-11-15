@@ -6,7 +6,9 @@ Font creator to help students **learn and read foreign languages faster** by app
 
 # Font Samplers
 
-- This archive contains additional font files used in the samplers: [PinyinFonts.zip](https://github.com/catusf/ruby-font-creator/releases/download/v1.0/PinyinFonts.zip)
+This archive contains additional font files used in the samplers: [PinyinFonts.zip](https://github.com/catusf/ruby-font-creator/releases/download/v1.0/PinyinFonts.zip)
+
+The base fonts they are created from are shown in [font_summary.md](font_summary.md).
 
 
 ### Pinyin-Tigris-Bottom-Handwritten
