@@ -82,9 +82,9 @@ function start(cliArguments) {
   // Write the JSON string to a file synchronously
   try {
     fs.writeFileSync(config_data_file, jsonData)
-    console.log('Data has been saved to data.json')
+    console.log(`Data has been saved to ${config_data_file}`)
   } catch (err) {
-    console.log('Error writing to file:', err)
+    console.log(`Error writing to file: ${config_data_file}`, err)
   }
 
   // Log the entire arguments array
