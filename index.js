@@ -2,35 +2,9 @@ import jsonfile from 'jsonfile'
 import webfont from 'webfont'
 import { argv, showCompletionScript } from 'yargs'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 import helpers from './src/helpers'
 import ruby from './src/ruby'
 import svg from './src/svg'
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function generateSvg(data, config) {
   const baseEngine = ruby.loadFont(config.baseFontFilepath)
@@ -125,12 +99,12 @@ function start(cliArguments) {
 
     // Use when only generate the config then quit
     // console.log(cliArguments)
-    
+
     if (cliArguments.save_config) {
       console.log(`Save ${cliArguments.config} then quits.`)
       return
     }
-    
+
     generateSvg(data, config)
 
     buildFont(config).then(fontData =>
