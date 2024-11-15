@@ -9,7 +9,7 @@ export default {
   rubyFontFilepath: path.resolve(
     './resources/fonts/LXGWWenKaiMono-Regular.ttf'
   ),
-  fontName: 'Tigris-Pinyin-Left-Handwritten',
+  fontName: 'Pinyin-Tigris-Left-Handwritten',
   get layout() {
     return {
       base: this.baseLayout(this.canvas),

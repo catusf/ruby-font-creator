@@ -20,12 +20,10 @@
                 "babel-core/register",
                 "--config=./src/config/catus.bottom.js",
                 "--data=src/data-small-org.json",
-                "--font-name=Leo-Pinyin-Bottom",
+                "--font-name=Pinyin-Leo-Bottom",
                 "--base-font=resources/fonts/NotoSerifSC-Regular.ttf",
                 "--ruby-font=resources/fonts/LXGWWenKaiMono-Regular.ttf",
             ]
         }
     ]
 }
-
-

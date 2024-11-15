@@ -3,9 +3,9 @@
     "width": 80,
     "height": 80
   },
-  "baseFontFilepath": "C:\\Users\\ITFDL\\OneDrive - FPT Corporation\\Personal\\Playground\\ruby-font-creator\\resources\\fonts\\NotoSerifSC-Regular.ttf",
-  "rubyFontFilepath": "C:\\Users\\ITFDL\\OneDrive - FPT Corporation\\Personal\\Playground\\ruby-font-creator\\resources\\fonts\\LXGWWenKaiMono-Regular.ttf",
-  "fontName": "Pinyin-Test-Bottom-Small",
+  "baseFontFilepath": "/workspaces/ruby-font-creator/resources/fonts/NotoSansSC-Regular.ttf",
+  "rubyFontFilepath": "/workspaces/ruby-font-creator/resources/fonts/LXGWWenKaiMono-Regular.ttf",
+  "fontName": "Pinyin-Catus-Bottom-Sans",
   "layout": {
     "base": {
       "x": 40,
@@ -30,10 +30,10 @@
       }
     }
   },
-  "dataSource": "C:\\Users\\ITFDL\\OneDrive - FPT Corporation\\Personal\\Playground\\ruby-font-creator\\src\\data-small-org.json",
+  "dataSource": "/workspaces/ruby-font-creator/src/data-small-org.json",
   "formats": [
     "ttf"
   ],
   "inputFiles": "./build/**/*.svg",
-  "workingDir": "C:\\Users\\ITFDL\\OneDrive - FPT Corporation\\Personal\\Playground\\ruby-font-creator\\build\\svg"
+  "workingDir": "/workspaces/ruby-font-creator/build/svg"
 }

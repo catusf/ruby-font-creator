@@ -7,7 +7,7 @@ export default {
   rubyFontFilepath: path.resolve(
     './resources/fonts/LXGWWenKaiMono-Regular.ttf'
   ),
-  fontName: 'Catus-Pinyin-Left-Sans',
+  fontName: 'Pinyin-Catus-Left-Sans',
   get layout() {
     return {
       base: this.baseLayout(this.canvas),

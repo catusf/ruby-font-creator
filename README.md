@@ -9,74 +9,74 @@ Font creator to help students **learn and read foreign languages faster** by app
 - This archive contains additional font files used in the samplers: [PinyinFonts.zip](https://github.com/catusf/ruby-font-creator/releases/download/v1.0/PinyinFonts.zip)
 
 
-### Tigris-Pinyin-Bottom-Handwritten
-- **Font file**: [Tigris-Pinyin-Bottom-Handwritten.ttf](output/Tigris-Pinyin-Bottom-Handwritten.ttf)
+### Pinyin-Tigris-Bottom-Handwritten
+- **Font file**: [Pinyin-Tigris-Bottom-Handwritten.ttf](output/Pinyin-Tigris-Bottom-Handwritten.ttf)
 
-![Tigris-Pinyin-Bottom-Handwritten](output/Tigris-Pinyin-Bottom-Handwritten.png)
+![Pinyin-Tigris-Bottom-Handwritten](output/Pinyin-Tigris-Bottom-Handwritten.png)
 
-### Tigris-Pinyin-Left-Handwritten
-- **Font file**: [Tigris-Pinyin-Left-Handwritten.ttf](output/Tigris-Pinyin-Left-Handwritten.ttf)
+### Pinyin-Tigris-Left-Handwritten
+- **Font file**: [Pinyin-Tigris-Left-Handwritten.ttf](output/Pinyin-Tigris-Left-Handwritten.ttf)
 
-![Tigris-Pinyin-Left-Handwritten](output/Tigris-Pinyin-Left-Handwritten.png)
+![Pinyin-Tigris-Left-Handwritten](output/Pinyin-Tigris-Left-Handwritten.png)
 
-### Tigris-Pinyin-Top-Handwritten
-- **Font file**: [Tigris-Pinyin-Top-Handwritten.ttf](output/Tigris-Pinyin-Top-Handwritten.ttf)
+### Pinyin-Tigris-Top-Handwritten
+- **Font file**: [Pinyin-Tigris-Top-Handwritten.ttf](output/Pinyin-Tigris-Top-Handwritten.ttf)
 
-![Tigris-Pinyin-Top-Handwritten](output/Tigris-Pinyin-Top-Handwritten.png)
+![Pinyin-Tigris-Top-Handwritten](output/Pinyin-Tigris-Top-Handwritten.png)
 
-### Leo-Pinyin-Bottom-Serif
-- **Font file**: [Leo-Pinyin-Bottom-Serif.ttf](output/Leo-Pinyin-Bottom-Serif.ttf)
+### Pinyin-Leo-Bottom-Serif
+- **Font file**: [Pinyin-Leo-Bottom-Serif.ttf](output/Pinyin-Leo-Bottom-Serif.ttf)
 
-![Leo-Pinyin-Bottom-Serif](output/Leo-Pinyin-Bottom-Serif.png)
+![Pinyin-Leo-Bottom-Serif](output/Pinyin-Leo-Bottom-Serif.png)
 
-### Leo-Pinyin-Left-Serif
-- **Font file**: [Leo-Pinyin-Left-Serif.ttf](output/Leo-Pinyin-Left-Serif.ttf)
+### Pinyin-Leo-Left-Serif
+- **Font file**: [Pinyin-Leo-Left-Serif.ttf](output/Pinyin-Leo-Left-Serif.ttf)
 
-![Leo-Pinyin-Left-Serif](output/Leo-Pinyin-Left-Serif.png)
+![Pinyin-Leo-Left-Serif](output/Pinyin-Leo-Left-Serif.png)
 
-### Leo-Pinyin-Top-Serif
-- **Font file**: [Leo-Pinyin-Top-Serif.ttf](output/Leo-Pinyin-Top-Serif.ttf)
+### Pinyin-Leo-Top-Serif
+- **Font file**: [Pinyin-Leo-Top-Serif.ttf](output/Pinyin-Leo-Top-Serif.ttf)
 
-![Leo-Pinyin-Top-Serif](output/Leo-Pinyin-Top-Serif.png)
+![Pinyin-Leo-Top-Serif](output/Pinyin-Leo-Top-Serif.png)
 
-### Onca-Pinyin-Bottom-Serif
-- **Font file**: [Onca-Pinyin-Bottom-Serif.ttf](output/Onca-Pinyin-Bottom-Serif.ttf)
+### Pinyin-Onca-Bottom-Serif
+- **Font file**: [Pinyin-Onca-Bottom-Serif.ttf](output/Pinyin-Onca-Bottom-Serif.ttf)
 
-![Onca-Pinyin-Bottom-Serif](output/Onca-Pinyin-Bottom-Serif.png)
+![Pinyin-Onca-Bottom-Serif](output/Pinyin-Onca-Bottom-Serif.png)
 
-### Onca-Pinyin-Left-Serif
-- **Font file**: [Onca-Pinyin-Left-Serif.ttf](output/Onca-Pinyin-Left-Serif.ttf)
+### Pinyin-Onca-Left-Serif
+- **Font file**: [Pinyin-Onca-Left-Serif.ttf](output/Pinyin-Onca-Left-Serif.ttf)
 
-![Onca-Pinyin-Left-Serif](output/Onca-Pinyin-Left-Serif.png)
+![Pinyin-Onca-Left-Serif](output/Pinyin-Onca-Left-Serif.png)
 
-### Onca-Pinyin-Top-Serif
-- **Font file**: [Onca-Pinyin-Top-Serif.ttf](output/Onca-Pinyin-Top-Serif.ttf)
+### Pinyin-Onca-Top-Serif
+- **Font file**: [Pinyin-Onca-Top-Serif.ttf](output/Pinyin-Onca-Top-Serif.ttf)
 
-![Onca-Pinyin-Top-Serif](output/Onca-Pinyin-Top-Serif.png)
+![Pinyin-Onca-Top-Serif](output/Pinyin-Onca-Top-Serif.png)
 
-### Catus-Pinyin-Bottom-Sans
-- **Font file**: [Catus-Pinyin-Bottom-Sans.ttf](output/Catus-Pinyin-Bottom-Sans.ttf)
+### Pinyin-Catus-Bottom-Sans
+- **Font file**: [Pinyin-Catus-Bottom-Sans.ttf](output/Pinyin-Catus-Bottom-Sans.ttf)
 
-![Catus-Pinyin-Bottom-Sans](output/Catus-Pinyin-Bottom-Sans.png)
+![Pinyin-Catus-Bottom-Sans](output/Pinyin-Catus-Bottom-Sans.png)
 
-### Catus-Pinyin-Left-Sans
-- **Font file**: [Catus-Pinyin-Left-Sans.ttf](output/Catus-Pinyin-Left-Sans.ttf)
+### Pinyin-Catus-Left-Sans
+- **Font file**: [Pinyin-Catus-Left-Sans.ttf](output/Pinyin-Catus-Left-Sans.ttf)
 
-![Catus-Pinyin-Left-Sans](output/Catus-Pinyin-Left-Sans.png)
+![Pinyin-Catus-Left-Sans](output/Pinyin-Catus-Left-Sans.png)
 
-### Catus-Pinyin-Top-Sans
-- **Font file**: [Catus-Pinyin-Top-Sans.ttf](output/Catus-Pinyin-Top-Sans.ttf)
+### Pinyin-Catus-Top-Sans
+- **Font file**: [Pinyin-Catus-Top-Sans.ttf](output/Pinyin-Catus-Top-Sans.ttf)
 
-![Catus-Pinyin-Top-Sans](output/Catus-Pinyin-Top-Sans.png)
+![Pinyin-Catus-Top-Sans](output/Pinyin-Catus-Top-Sans.png)
 
 
 ### Features
 
-| languages | preview | state | repository | base-font
-| --- | :---: | :---: | --- | --- |
-| Chinese | ![top](resources/tpl/annotation-top.png)  | **✔️** | [hanzi-pinyin-font](https://github.com/parlr/hanzi-pinyin-font/releases) | [DroidSansFallbackFull](https://github.com/parlr/platform_frameworks_base/blob/562c45cc841681ed80d4e94515b23c28eb60eae4/data/fonts/DroidSansFallbackFull.ttf)
-| Tifinagh | -  | **🏃‍** | [hanzi-pinyin-font](https://github.com/parlr/tifinagh-font/releases) | [DroidSansFallbackFull](https://github.com/parlr/platform_frameworks_base/blob/562c45cc841681ed80d4e94515b23c28eb60eae4/data/fonts/DroidSansFallbackFull.ttf)
-| :speaking_head: [request new one](https://github.com/parlr/ruby-font-creator/issues/new) | - | - | - | Please provide an open-source font |
+| languages                                                                                |                 preview                  | state | repository                                                               | base-font                                                                                                                                                     |
+| ---------------------------------------------------------------------------------------- | :--------------------------------------: | :---: | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Chinese                                                                                  | ![top](resources/tpl/annotation-top.png) | **✔️** | [hanzi-pinyin-font](https://github.com/parlr/hanzi-pinyin-font/releases) | [DroidSansFallbackFull](https://github.com/parlr/platform_frameworks_base/blob/562c45cc841681ed80d4e94515b23c28eb60eae4/data/fonts/DroidSansFallbackFull.ttf) |
+| Tifinagh                                                                                 |                    -                     | **🏃‍** | [hanzi-pinyin-font](https://github.com/parlr/tifinagh-font/releases)     | [DroidSansFallbackFull](https://github.com/parlr/platform_frameworks_base/blob/562c45cc841681ed80d4e94515b23c28eb60eae4/data/fonts/DroidSansFallbackFull.ttf) |
+| :speaking_head: [request new one](https://github.com/parlr/ruby-font-creator/issues/new) |                    -                     |   -   | -                                                                        | Please provide an open-source font                                                                                                                            |
 
 **Legend:**
 **⏸**→

@@ -7,7 +7,7 @@ export default {
   rubyFontFilepath: path.resolve(
     './resources/fonts/LXGWWenKaiMono-Regular.ttf'
   ),
-  fontName: 'Onca-Pinyin-Bottom-Serif',
+  fontName: 'Pinyin-Onca-Bottom-Serif',
   get layout() {
     return {
       base: this.baseLayout(this.canvas),

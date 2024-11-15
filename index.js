@@ -114,7 +114,7 @@ function start(cliArguments) {
   }
 
   // Log the entire arguments array
-  console.log(args)
+  // console.log(args)
 
   jsonfile.readFile(config.dataSource, (err, data) => {
     if (err) {

@@ -9,7 +9,7 @@ export default {
   rubyFontFilepath: path.resolve(
     './resources/fonts/LXGWWenKaiMono-Regular.ttf'
   ),
-  fontName: 'Leo-Pinyin-Bottom-Serif',
+  fontName: 'Pinyin-Leo-Bottom-Serif',
   get layout() {
     return {
       base: this.baseLayout(this.canvas),

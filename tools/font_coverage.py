@@ -571,7 +571,7 @@ def get_unicode_ranges_with_names(font_path):
     print(f'Font UPEEM: {upeem}')
 
 
-# font_path = "resources/Hanzi-Pinyin-Font.top (1).ttf"  # Path to your font file
+# font_path = "resources/HanziPinyin-Tigris-Font.top (1).ttf"  # Path to your font file
 # font_path = "resources/fonts/Mengshen-Handwritten.ttf"  # Path to your font file
 font_path = "resources/fonts/Noto-Sans-Mono-Top.ttf"
 

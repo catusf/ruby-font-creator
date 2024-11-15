@@ -133,12 +133,15 @@ def main(save_config=False, small_data=False):
         run_build_commands(data, config, save_config)
 
         json_config = config.replace(".js", ".json")
-        parameters = json.load(json_config)
-        fontname = parameters['fontName']
-        fontpath = os.path.join(OUTPUT_DIR, fontname+".ttf")
-        new_fontpath = os.path.join(OUTPUT_DIR, fontname+"-new.ttf")
+
+        with open(json_config, "r", encoding="utf-8") as f:
+            parameters = json.load(f)
+    
+            fontname = parameters['fontName']
+            fontpath = os.path.join(OUTPUT_DIR, fontname+".ttf")
+            new_fontpath = os.path.join(OUTPUT_DIR, fontname+"-new.ttf")
         
-        cleanup_font_name(fontpath, new_fontpath)
+            cleanup_font_name(fontpath, new_fontpath)
 
 import argparse
 
