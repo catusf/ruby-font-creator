@@ -6,7 +6,8 @@ import json
 import os
 from fontTools.ttLib import TTFont
 
-OUTPUT_DIR = 'output'
+OUTPUT_DIR = "output"
+
 
 def get_name_encoding(name):
     """
@@ -37,6 +38,7 @@ def get_name_encoding(name):
 
     return None
 
+
 def get_decoded_name(name) -> str:
     """
     Parameters:
@@ -55,18 +57,18 @@ def get_decoded_name(name) -> str:
 
     return name_to_decode.decode(encoding)
 
+
 def cleanup_font_name(input_file, output_file):
-    """ Remove the - character in font name
-    """
+    """Remove the - character in font name"""
 
     # Load the font file
     font = TTFont(input_file)
 
-    fontFamilyName = font['name'].getDebugName(1)
+    fontFamilyName = font["name"].getDebugName(1)
     newfontFamilyName = fontFamilyName.replace("-", " ")
 
     # Access the 'name' table
-    name_table = font['name']
+    name_table = font["name"]
 
     # Iterate through the name table to find the font name entry (name_id = 4)
     for record in name_table.names:
@@ -79,7 +81,10 @@ def cleanup_font_name(input_file, output_file):
             record.string = newfontFamilyName.encode(encoding)
 
     font.save(output_file)
-    print(f"Font has been updated and saved as '{newfontFamilyName}' in '{output_file}'.")
+    print(
+        f"Font has been updated and saved as '{newfontFamilyName}' in '{output_file}'."
+    )
+
 
 def run_build_commands(data, config, save_config):
     # Generate the font name
@@ -103,7 +108,7 @@ def run_build_commands(data, config, save_config):
 
 def main(save_config=False, small_data=False):
 
-    if small_data:  
+    if small_data:
         data_options = ["src/data-small-org.json"]
     else:
         data_options = ["src/data.json"]
@@ -136,19 +141,26 @@ def main(save_config=False, small_data=False):
 
         with open(json_config, "r", encoding="utf-8") as f:
             parameters = json.load(f)
-    
-            fontname = parameters['fontName']
-            fontpath = os.path.join(OUTPUT_DIR, fontname+".ttf")
-            new_fontpath = os.path.join(OUTPUT_DIR, fontname+"-new.ttf")
-        
-            cleanup_font_name(fontpath, new_fontpath)
+
+            fontname = parameters["fontName"]
+            fontpath = os.path.join(OUTPUT_DIR, fontname + ".ttf")
+            # new_fontpath = os.path.join(OUTPUT_DIR, fontname+"-new.ttf")
+
+            cleanup_font_name(fontpath, fontpath)  # Overwrites
+
 
 import argparse
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Build fonts for all available config")
-    parser.add_argument('--save_config', action='store_true', help="Save the configuration then quit (optional)")
-    parser.add_argument('--small_data', action='store_true', help="Use small data (optional)")
+    parser.add_argument(
+        "--save_config",
+        action="store_true",
+        help="Save the configuration then quit (optional)",
+    )
+    parser.add_argument(
+        "--small_data", action="store_true", help="Use small data (optional)"
+    )
 
     args = parser.parse_args()
 
