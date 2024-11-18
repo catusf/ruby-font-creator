@@ -72,6 +72,12 @@ The base fonts they are created from are shown in [font_summary.md](font_summary
 ![Pinyin-Catus-Top-Sans](output/Pinyin-Catus-Top-Sans.png)
 
 
+## Known issues
+
+- The code runs tvery slowly. In Windows or GitHub Codespaces or Google Colab, cannot finish. Only ways to build full fonts is using GitHub Action.
+
+- On Windows, best to use VS Code WLS Extension, and connect to Window Subsysem Linux to develop. Otherwise, Node and Python code is hard to run together.
+
 ### Features
 
 | languages                                                                                |                 preview                  | state | repository                                                               | base-font                                                                                                                                                     |
